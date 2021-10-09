@@ -15,5 +15,5 @@ MonoBehaviour:
   title: Passer votre chemin.
   image: {fileID: 21300000, guid: dd673e76e60888b4193e2ffa400a2213, type: 3}
   effectText: "Rien. Vous continuez \xE0 avancer."
-  narrationText: 
+  narrationText: Vous avancez et rencontrez de nouvelles portes...
   effectList: []

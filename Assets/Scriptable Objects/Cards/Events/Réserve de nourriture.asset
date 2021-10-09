@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f49ca3dfb464c95baec5027e712e47e, type: 3}
-  m_Name: Coffret Os Oeil
+  m_Name: "R\xE9serve de nourriture"
   m_EditorClassIdentifier: 
-  title: Petit coffret en os
+  title: Garde-manger
   image: {fileID: 21300000, guid: dd673e76e60888b4193e2ffa400a2213, type: 3}
-  effectText: Un petit coffret en os, il contient peut etre quelque chose ?
-  narrationText: 'Vous ouvrez le coffret, et y trouvez un oeil !
+  effectText: Un petit creux ?
+  narrationText: 'Pas de norriture, dommage, mais quelques doigts qui trainnent.
+    On trouve vraiment de tout par ici !
 
-    Vous marchez
-    (ou rampez) jusqu''au prochaines portes.'
+    Vous continuez votre chemin vers les
+    portes suivantes.'
   effectList:
-  - value: 1
-    member: 4
+  - value: 10
+    member: 0

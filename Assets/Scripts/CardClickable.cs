@@ -15,7 +15,7 @@ public class CardClickable : MonoBehaviour
     [SerializeField] private SpriteRenderer unavailableMask;
 
     [HideInInspector] public Vector3 discardPos;
-    [HideInInspector] public Vector3 usePos;
+    public Vector3 usePos = new Vector3(4.14f, 7.59f, 0f);
 
     private bool _clickActive = true;
     private bool _isHovered = false;
@@ -76,7 +76,7 @@ public class CardClickable : MonoBehaviour
         _clickActive = canGoThrough;
         unavailableMask.enabled = !canGoThrough;
         
-        transform.localScale = Vector3.Lerp(transform.localScale, Vector3.one * (_isHovered ? 0.9f : 0.8f), 0.1f);
+        transform.localScale = Vector3.Lerp(transform.localScale, Vector3.one * (_isHovered ? 1f : 0.9f), 0.1f);
     }
 
     private void DoDiscardCard()

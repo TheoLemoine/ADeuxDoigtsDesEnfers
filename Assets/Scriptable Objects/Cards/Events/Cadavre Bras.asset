@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f49ca3dfb464c95baec5027e712e47e, type: 3}
-  m_Name: Coffret Os Oeil
+  m_Name: Cadavre Bras
   m_EditorClassIdentifier: 
-  title: Petit coffret en os
+  title: Cadavre puant
   image: {fileID: 21300000, guid: dd673e76e60888b4193e2ffa400a2213, type: 3}
-  effectText: Un petit coffret en os, il contient peut etre quelque chose ?
-  narrationText: 'Vous ouvrez le coffret, et y trouvez un oeil !
-
-    Vous marchez
-    (ou rampez) jusqu''au prochaines portes.'
+  effectText: Un cadavre puant, remplis de vers, vous pourriez peut etre en tirer
+    quelque chose ?
+  narrationText: "Le cadavre est vraiment en mauvais \xE9tat, vous r\xE9cup\xE9rez
+    ce qui reste : un bras trop long.\nVous continuez votre route et rencontrez une
+    autre s\xE9rie de porte."
   effectList:
   - value: 1
-    member: 4
+    member: 2
