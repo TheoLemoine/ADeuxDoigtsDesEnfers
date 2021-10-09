@@ -4,13 +4,28 @@ using UnityEngine;
 
 public class Body : MonoBehaviour
 {
-    public static int fingerCount { get => instance.fingers.Count; private set { } }
-    public static int armCount { get => instance.arms.Count; private set { } }
-    public static int eyeCount { get => instance.eyes.Count; private set { } }
-    public static int noseCount { get => instance.nose.Count; private set { } }
-    public static int legCount { get => instance.legs.Count; private set { } }
-    public static int footCount { get => instance.feet.Count; private set { } }
-    public static int earCount { get => instance.ears.Count; private set { } }
+    public static int memberCount(Members member)
+    {
+        switch (member)
+        {
+            case Members.Arm:
+                return armCount();
+            case Members.Ear:
+                return earCount();
+            case Members.Eye:
+                return eyeCount();
+            case Members.Finger:
+                return fingerCount();
+            case Members.Foot:
+                return footCount();
+            case Members.Leg:
+                return legCount();
+            case Members.Nose:
+                return noseCount();
+        }
+        return 0;
+    }
+
     public static Body instance;
     public List<Arm> arms = new List<Arm>();
     public List<Finger> fingers = new List<Finger>();
@@ -99,6 +114,101 @@ public class Body : MonoBehaviour
             m.active = false;
             mc.gameObject.SetActive(false);
         }
+    }
+
+    private static int fingerCount()
+    {
+        int totalActive = 0;
+        foreach (Member m in Body.instance.fingers)
+        {
+            if (m.active) totalActive++;
+        }
+        return totalActive;
+    }
+    private static int armCount()
+    {
+        int totalActive = 0;
+        foreach (Member m in Body.instance.arms)
+        {
+            if (m.active) totalActive++;
+        }
+        return totalActive;
+    }
+    private static int legCount()
+    {
+        int totalActive = 0;
+        foreach (Member m in Body.instance.legs)
+        {
+            if (m.active) totalActive++;
+        }
+        return totalActive;
+    }
+    private static int footCount()
+    {
+        int totalActive = 0;
+        foreach (Member m in Body.instance.feet)
+        {
+            if (m.active) totalActive++;
+        }
+        return totalActive;
+    }
+    private static int eyeCount()
+    {
+        int totalActive = 0;
+        foreach (Member m in Body.instance.eyes)
+        {
+            if (m.active) totalActive++;
+        }
+        return totalActive;
+    }
+    private static int earCount()
+    {
+        int totalActive = 0;
+        foreach (Member m in Body.instance.ears)
+        {
+            if (m.active) totalActive++;
+        }
+        return totalActive;
+    }
+    private static int noseCount()
+    {
+        int totalActive = 0;
+        foreach (Member m in Body.instance.nose)
+        {
+            if (m.active) totalActive++;
+        }
+        return totalActive;
+    }
+
+    public int numberLeftArm()
+    {
+        int total = 0;
+        for (int i = 0; i < 3; i++)
+        {
+            if (Body.instance.arms[i].active) total++;
+        }
+        return total;
+    }
+    public int numberLeftFingers()
+    {
+        int total = 0;
+        for (int i = 0; i < 21; i++)
+        {
+            if (Body.instance.fingers[i].active) total++;
+
+        }
+        return total;
+    }
+
+    public int numberLeftLegs()
+    {
+        int total = 0;
+        for (int i = 2; i < 4; i++)
+        {
+            if (Body.instance.legs[i].active) total++;
+
+        }
+        return total;
     }
 
 }
