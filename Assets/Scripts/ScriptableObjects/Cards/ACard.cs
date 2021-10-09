@@ -8,7 +8,7 @@ namespace ScriptableObjects.Cards
         public string title;
         
         // image on the card
-        public Texture2D image;
+        public Sprite image;
         
         // text displayed on the card
         [TextArea] public string effectText;

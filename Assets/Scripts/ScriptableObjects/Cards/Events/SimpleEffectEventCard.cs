@@ -12,7 +12,16 @@ namespace ScriptableObjects.Cards.Events
         {
             foreach (var effect in effectList)
             {
-                // use effect info to apply changes to the body
+                if (effect.value < 0)
+                {
+                    // cut members
+                    Debug.Log($"Cutting {-effect.value} {effect.member}");
+                } 
+                else if (effect.value > 0)
+                {
+                    // grow members
+                    Debug.Log($"Growing {effect.value} {effect.member}");
+                }
             }
         }
     }
