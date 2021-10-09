@@ -18,6 +18,7 @@ public class CardClickable : MonoBehaviour
     [HideInInspector] public Vector3 usePos;
 
     private bool _clickActive = true;
+    private bool _isHovered = false;
     
     private void Start()
     {
@@ -26,20 +27,26 @@ public class CardClickable : MonoBehaviour
 
     private IEnumerator OnMouseUpAsButton()
     {
+        // on click
         if (!_clickActive) yield break;
         _clickActive = false;
 
+        // discard all other cards
         discardOn.OnTriggered -= DoDiscardCard;
-        
         discardOn.Trigger();
         
+        // move the card out
         lerper.targetPos = usePos;
 
         yield return new WaitForSeconds(1);
         
+        // card effect
         cardData.card.RunEffect();
-        // set narration text
+        
+        // TODO set narration text
+        Narration.SetText(cardData.card.narrationText);
 
+        // next turn
         if (cardData.card is ADoorCard)
         {
             drawEvents.Trigger();
@@ -54,12 +61,13 @@ public class CardClickable : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        // do hover effect
+        if(!_clickActive) return;
+        _isHovered = true;
     }
 
     private void OnMouseExit()
     {
-        // stop hover effect
+        _isHovered = false;
     }
 
     private void Update()
@@ -67,6 +75,8 @@ public class CardClickable : MonoBehaviour
         var canGoThrough = cardData.card.CanGoThrough();
         _clickActive = canGoThrough;
         unavailableMask.enabled = !canGoThrough;
+        
+        transform.localScale = Vector3.Lerp(transform.localScale, Vector3.one * (_isHovered ? 0.9f : 0.8f), 0.1f);
     }
 
     private void DoDiscardCard()
@@ -76,6 +86,7 @@ public class CardClickable : MonoBehaviour
     
     private IEnumerator DiscardCard()
     {
+        // move the card out and destroy it
         _clickActive = false;
         discardOn.OnTriggered -= DoDiscardCard;
         
