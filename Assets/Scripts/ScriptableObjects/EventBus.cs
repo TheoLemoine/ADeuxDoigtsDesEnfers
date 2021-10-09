@@ -1,8 +1,16 @@
-﻿namespace DefaultNamespace
+﻿using System;
+using UnityEngine;
+
+namespace ScriptableObjects
 {
-    [UnityEngine.CreateAssetMenu(fileName = "FILENAME", menuName = "MENUNAME", order = 0)]
-    public class EventBus : UnityEngine.ScriptableObject
+    [CreateAssetMenu(fileName = "Event", menuName = "Scriptable/Event Bus", order = 0)]
+    public class EventBus : ScriptableObject
     {
-        
+        public event Action OnTriggered;
+
+        public void Trigger()
+        {
+            OnTriggered?.Invoke();
+        }
     }
 }

@@ -1,27 +1,22 @@
-﻿using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
+﻿using UnityEditor;
+using UnityEngine;
 
-[CustomEditor(typeof(MyCustomScript))]
-public class MyCustomEditor : Editor
+namespace ScriptableObjects.Editor
 {
-    private MyCustomScript script;
-
-    private void OnEnable()
+    [CustomEditor(typeof(EventBus))]
+    public class EventBusEditor : UnityEditor.Editor
     {
-        // Method 1
-        script = (MyCustomScript) target;
-    }
+        private EventBus eventBus;
 
-    public override void OnInspectorGUI()
-    {
-        if (GUILayout.Button("MyButton"))
+        public override void OnInspectorGUI()
         {
-			
-        }
+            if (GUILayout.Button("Trigger"))
+            {
+                eventBus = (EventBus) target;
+                eventBus.Trigger();
+            }
 
-        // Draw default inspector after button...
-        base.OnInspectorGUI();
+            base.OnInspectorGUI();
+        }
     }
 }
