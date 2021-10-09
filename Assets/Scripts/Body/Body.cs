@@ -49,10 +49,11 @@ public class Body : MonoBehaviour
         for (int i = 0; i < 6; i++)
         {
             Transform fullArm = transform.GetChild(2).GetChild(i);
+            Transform ragdollArm = transform.GetChild(5).GetChild(2).GetChild(i);
             //Create the arm
             Arm newArm = new Arm();
             arms.Add(newArm);
-            Link(fullArm.GetChild(0), newArm);
+            Link(fullArm.GetChild(0), newArm, ragdollArm.GetChild(0));
             //Create the fingers
             for (int j = 0; j < 7; j++)
             {
@@ -60,23 +61,24 @@ public class Body : MonoBehaviour
                 fingers.Add(newFinger);
                 newArm.fingers.Add(newFinger);
                 newFinger.arm = newArm;
-                Link(fullArm.GetChild(j + 1), newFinger);
+                Link(fullArm.GetChild(j + 1), newFinger, ragdollArm.GetChild(j + 1));
             }
         }
         //Create each leg
         for (int i = 0; i < 4; i++)
         {
             Transform fullLeg = transform.GetChild(3).GetChild(i);
+            Transform ragdollLeg = transform.GetChild(5).GetChild(3).GetChild(i);
             //Create the leg
             Leg newLeg = new Leg();
             legs.Add(newLeg);
-            Link(fullLeg.GetChild(0), newLeg);
+            Link(fullLeg.GetChild(0), newLeg, ragdollLeg.GetChild(0));
             //Create the foot
             Foot newFoot = new Foot();
             feet.Add(newFoot);
             newLeg.foot = newFoot;
             newFoot.leg = newLeg;
-            Link(fullLeg.GetChild(1), newFoot);
+            Link(fullLeg.GetChild(1), newFoot, ragdollLeg.GetChild(1));
         }
         //Create each ear
         for (int i = 0; i < 2; i++)
@@ -85,7 +87,7 @@ public class Body : MonoBehaviour
             //Create the ear
             Ear newEar = new Ear();
             ears.Add(newEar);
-            Link(ear, newEar);
+            Link(ear, newEar, transform.GetChild(5).GetChild(4).GetChild(0).GetChild(i));
         }
         //Create each ear
         for (int i = 0; i < 3; i++)
@@ -94,21 +96,23 @@ public class Body : MonoBehaviour
             //Create the ear
             Eye newEye = new Eye();
             eyes.Add(newEye);
-            Link(eye, newEye);
+            Link(eye, newEye, transform.GetChild(5).GetChild(4).GetChild(1).GetChild(i));
         }
         //Create the nose
         Transform noseTransform = transform.GetChild(4).GetChild(2);
         Nose newNose = new Nose();
         nose.Add(newNose);
-        Link(noseTransform, newNose);
+        Link(noseTransform, newNose, transform.GetChild(5).GetChild(4).GetChild(2));
 
     }
 
-    private void Link(Transform t, Member m)
+    private void Link(Transform t, Member m, Transform ragdollTransform)
     {
         MemberCollider mc = t.GetComponent<MemberCollider>();
+        Ragdoll ragdoll = ragdollTransform.GetComponent<Ragdoll>();
         mc.member = m;
         m.memberCollider = mc;
+        m.ragdoll = ragdoll;
         if (!mc.isActiveByDefault)
         {
             m.active = false;
@@ -215,10 +219,12 @@ public class Body : MonoBehaviour
 
 public class Member
 {
+    public Ragdoll ragdoll;
     public MemberCollider memberCollider;
     public bool active = true;
     public virtual void Cut()
     {
+        if (active) ragdoll.DoRagdoll();
         active = false;
         memberCollider.gameObject.SetActive(false);
     }
@@ -236,8 +242,7 @@ public class Arm : Member
 
     public override void Cut()
     {
-        active = false;
-        memberCollider.gameObject.SetActive(false);
+        base.Cut();
         foreach (Finger f in fingers)
         {
             f.Cut();
@@ -275,8 +280,7 @@ public class Leg : Member
     public Foot foot;
     public override void Cut()
     {
-        active = false;
-        memberCollider.gameObject.SetActive(false);
+        base.Cut();
         foot.Cut();
     }
 
