@@ -15,7 +15,7 @@ MonoBehaviour:
   title: Doigts du diable
   image: {fileID: 0}
   effectText: Avoir 13 doigts au total
-  narrationText: 
+  narrationText: Vous passez la porte et continuez votre chemin
   memberInvolved: 0
   less: 0
   equal: 1

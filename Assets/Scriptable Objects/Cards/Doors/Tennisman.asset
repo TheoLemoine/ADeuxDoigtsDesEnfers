@@ -15,5 +15,5 @@ MonoBehaviour:
   title: Tennisman
   image: {fileID: 0}
   effectText: Avoir un nombre impair de bras
-  narrationText: 
+  narrationText: Vous passez la porte et continuez votre chemin
   member: 1

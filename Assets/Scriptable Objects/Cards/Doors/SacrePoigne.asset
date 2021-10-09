@@ -15,5 +15,5 @@ MonoBehaviour:
   title: "Sacr\xE9 poigne"
   image: {fileID: 0}
   effectText: Avoir une main avec six doigts
-  narrationText: 
+  narrationText: Vous passez la porte et continuez votre chemin
   nbFingerNeeded: 6

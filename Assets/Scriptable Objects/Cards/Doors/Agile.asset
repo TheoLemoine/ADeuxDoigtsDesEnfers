@@ -15,7 +15,7 @@ MonoBehaviour:
   title: Agile
   image: {fileID: 0}
   effectText: Avoir autant de doigts que bras
-  narrationText: 
+  narrationText: Vous passez la porte et continuez votre chemin
   firstMemberInvolved: 0
   less: 0
   equal: 1

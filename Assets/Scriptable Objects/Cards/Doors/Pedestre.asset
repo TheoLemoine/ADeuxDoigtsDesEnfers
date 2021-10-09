@@ -15,7 +15,7 @@ MonoBehaviour:
   title: "P\xE9destre"
   image: {fileID: 0}
   effectText: Avoir autant de pieds que de doigts
-  narrationText: 
+  narrationText: Vous passez la porte et continuez votre chemin
   firstMemberInvolved: 3
   less: 0
   equal: 1

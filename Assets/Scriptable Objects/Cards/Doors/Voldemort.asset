@@ -15,7 +15,7 @@ MonoBehaviour:
   title: Voldemort
   image: {fileID: 0}
   effectText: Ne pas avoir de nez
-  narrationText: 
+  narrationText: Vous passez la porte et continuez votre chemin
   memberInvolved: 5
   less: 0
   equal: 1

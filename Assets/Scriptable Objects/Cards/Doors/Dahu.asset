@@ -15,5 +15,5 @@ MonoBehaviour:
   title: Dahu
   image: {fileID: 0}
   effectText: Avoir un nombre impair de jambe
-  narrationText: 
+  narrationText: Vous passez la porte et continuez votre chemin
   member: 2

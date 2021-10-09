@@ -15,5 +15,5 @@ MonoBehaviour:
   title: Unidextre
   image: {fileID: 0}
   effectText: Avoir une main avec un seul doigt
-  narrationText: 
+  narrationText: Vous passez la porte et continuez votre chemin
   nbFingerNeeded: 1

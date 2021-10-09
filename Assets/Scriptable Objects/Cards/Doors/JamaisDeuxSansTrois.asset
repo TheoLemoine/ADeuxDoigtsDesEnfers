@@ -15,5 +15,5 @@ MonoBehaviour:
   title: Jamais deux sans trois
   image: {fileID: 0}
   effectText: Avoir une main avec trois doigts
-  narrationText: 
+  narrationText: Vous passez la porte et continuez votre chemin
   nbFingerNeeded: 3

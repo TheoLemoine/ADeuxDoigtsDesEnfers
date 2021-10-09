@@ -15,5 +15,5 @@ MonoBehaviour:
   title: Tape m'en quatre
   image: {fileID: 0}
   effectText: Avoir une main avec quatre doigts
-  narrationText: 
+  narrationText: Vous passez la porte et continuez votre chemin
   nbFingerNeeded: 4

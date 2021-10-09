@@ -15,5 +15,5 @@ MonoBehaviour:
   title: Pieuvre
   image: {fileID: 0}
   effectText: Avoir un total de huit membres
-  narrationText: 
+  narrationText: Vous passez la porte et continuez votre chemin
   nbLimbNeeded: 8

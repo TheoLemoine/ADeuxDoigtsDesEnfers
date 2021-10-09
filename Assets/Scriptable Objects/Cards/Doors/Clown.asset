@@ -15,7 +15,7 @@ MonoBehaviour:
   title: Clown
   image: {fileID: 0}
   effectText: Avoir plus de bras que de jambe
-  narrationText: 
+  narrationText: Vous passez la porte et continuez votre chemin
   firstMemberInvolved: 2
   less: 1
   equal: 0

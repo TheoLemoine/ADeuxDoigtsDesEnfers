@@ -15,7 +15,7 @@ MonoBehaviour:
   title: Droitier
   image: {fileID: 0}
   effectText: Avoir plus de doigts droit que de doigts gauche
-  narrationText: 
+  narrationText: Vous passez la porte et continuez votre chemin
   memberInvolved: 0
   rightHasLess: 0
   rightHasEqual: 0

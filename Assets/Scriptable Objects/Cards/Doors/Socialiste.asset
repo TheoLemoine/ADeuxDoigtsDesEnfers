@@ -15,7 +15,7 @@ MonoBehaviour:
   title: Socialiste
   image: {fileID: 0}
   effectText: Ne pas avoir d'oreille droite
-  narrationText: 
+  narrationText: Vous passez la porte et continuez votre chemin
   index: 1
   hasNot: 1
   hasOnly: 0

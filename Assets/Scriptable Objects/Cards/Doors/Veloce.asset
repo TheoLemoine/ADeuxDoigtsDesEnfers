@@ -15,7 +15,7 @@ MonoBehaviour:
   title: "V\xE9loce"
   image: {fileID: 0}
   effectText: Avoir autant de jambes que de doigts
-  narrationText: 
+  narrationText: Vous passez la porte et continuez votre chemin
   firstMemberInvolved: 2
   less: 0
   equal: 1
