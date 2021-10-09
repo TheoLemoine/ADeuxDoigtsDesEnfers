@@ -15,5 +15,8 @@ namespace ScriptableObjects.Cards
         
         // text displayed on the naration when the card is chosed
         [TextArea] public string narrationText;
+
+        public abstract bool CanGoThrough();
+        public abstract void RunEffect();
     }
 }

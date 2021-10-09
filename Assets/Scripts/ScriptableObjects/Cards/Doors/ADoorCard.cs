@@ -2,6 +2,6 @@
 {
     public abstract class ADoorCard : ACard
     {
-        public abstract bool CanGoThrough();
+        public override void RunEffect() { }
     }
 }
