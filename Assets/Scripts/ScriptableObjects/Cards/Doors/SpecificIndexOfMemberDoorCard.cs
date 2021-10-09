@@ -22,7 +22,7 @@ namespace ScriptableObjects.Cards.Doors
             if (hasOnly)
             {
                 if (member == Members.Eye)
-                    return Body.instance.ears[index].active && (Body.memberCount(Members.Eye) == 1);
+                    return Body.instance.eyes[index].active && (Body.memberCount(Members.Eye) == 1);
                 Debug.LogWarning("Should not be used this way, or more code needs to be done ...");
                 return false;
             }
