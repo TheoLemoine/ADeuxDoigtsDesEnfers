@@ -467,8 +467,9 @@ GameObject:
   - component: {fileID: 1839933445}
   - component: {fileID: 1839933444}
   - component: {fileID: 1839933443}
+  - component: {fileID: 1839933446}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: Narration
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -627,6 +628,19 @@ RectTransform:
   m_AnchoredPosition: {x: 3.83, y: 3.28}
   m_SizeDelta: {x: 8.13, y: 2.1}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1839933446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839933442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f04026b1c2d24a79b8ced91dd0679ae9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  narrationTMP: {fileID: 1839933443}
 --- !u!1001 &3981911025614428980
 PrefabInstance:
   m_ObjectHideFlags: 0
