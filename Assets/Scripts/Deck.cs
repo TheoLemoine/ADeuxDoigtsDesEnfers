@@ -36,14 +36,14 @@ public class Deck : MonoBehaviour
                     Random.Range(-0.2f, 0.2f)
                     ), 
                 isLast,
-                drawnCards
+                ref drawnCards
                 );
 
             yield return new WaitForSeconds(0.5f);
         }
     }
 
-    private void DrawCard(Vector3 position, bool drawDefault, List<ACard> alreadyDrawnCard)
+    private void DrawCard(Vector3 position, bool drawDefault, ref List<ACard> alreadyDrawnCard)
     {
         ACard drawnCard;
 

@@ -12,6 +12,7 @@ public class CardClickable : MonoBehaviour
     [SerializeField] private EventBus discardOn;
     [SerializeField] private CardDataSetter cardData;
     [SerializeField] private LerpToPos lerper;
+    [SerializeField] private SpriteRenderer unavailableMask;
 
     [HideInInspector] public Vector3 discardPos;
     [HideInInspector] public Vector3 usePos;
@@ -34,7 +35,7 @@ public class CardClickable : MonoBehaviour
         
         lerper.targetPos = usePos;
 
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         
         cardData.card.RunEffect();
         // set narration text
@@ -63,7 +64,9 @@ public class CardClickable : MonoBehaviour
 
     private void Update()
     {
-        // update usability
+        var canGoThrough = cardData.card.CanGoThrough();
+        _clickActive = canGoThrough;
+        unavailableMask.enabled = !canGoThrough;
     }
 
     private void DoDiscardCard()
