@@ -3,9 +3,39 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-public class RandomCutter
+public class Cutter
 {
-    public static void CutFingerAtRandom()
+    public static void CutMemberAtRandom(Members member, int amount)
+    {
+        for (int i = 0; i < amount; i++)
+        {
+            switch (member)
+            {
+                case Members.Arm:
+                    CutArmAtRandom();
+                    break;
+                case Members.Ear:
+                    CutEarAtRandom();
+                    break;
+                case Members.Eye:
+                    CutEyeAtRandom();
+                    break;
+                case Members.Finger:
+                    CutFingerAtRandom();
+                    break;
+                case Members.Foot:
+                    CutFootAtRandom();
+                    break;
+                case Members.Leg:
+                    CutLegAtRandom();
+                    break;
+                case Members.Nose:
+                    CutNoseAtRandom();
+                    break;
+            }
+        }
+    }
+    static void CutFingerAtRandom()
     {
         List<Member> list = new List<Member>();
         foreach (Member member in Body.instance.fingers)
@@ -28,7 +58,7 @@ public class RandomCutter
         CutFingerAtRandom();
     }
 
-    public static void CutArmAtRandom()
+    static void CutArmAtRandom()
     {
         List<Member> list = new List<Member>();
         foreach (Member member in Body.instance.arms)
@@ -51,7 +81,7 @@ public class RandomCutter
         CutArmAtRandom();
     }
 
-    public static void CutFootAtRandom()
+    static void CutFootAtRandom()
     {
         List<Member> list = new List<Member>();
         foreach (Member member in Body.instance.feet)
@@ -74,7 +104,7 @@ public class RandomCutter
         CutFootAtRandom();
     }
 
-    public static void CutLegAtRandom()
+    static void CutLegAtRandom()
     {
         List<Member> list = new List<Member>();
         foreach (Member member in Body.instance.legs)
@@ -97,7 +127,7 @@ public class RandomCutter
         CutLegAtRandom();
     }
 
-    public static void CutEyeAtRandom()
+    static void CutEyeAtRandom()
     {
         List<Member> list = new List<Member>();
 
@@ -121,7 +151,7 @@ public class RandomCutter
         CutEyeAtRandom();
     }
 
-    public static void CutEarAtRandom()
+    static void CutEarAtRandom()
     {
         List<Member> list = new List<Member>();
 
@@ -145,7 +175,7 @@ public class RandomCutter
         CutEarAtRandom();
     }
 
-    public static void CutNoseAtRandom()
+    static void CutNoseAtRandom()
     {
         List<Member> list = new List<Member>();
 

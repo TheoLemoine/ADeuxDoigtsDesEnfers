@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class Body : MonoBehaviour
 {
+    public static int fingerCount { get => instance.fingers.Count; private set { } }
+    public static int armCount { get => instance.arms.Count; private set { } }
+    public static int eyeCount { get => instance.eyes.Count; private set { } }
+    public static int noseCount { get => instance.nose.Count; private set { } }
+    public static int legCount { get => instance.legs.Count; private set { } }
+    public static int footCount { get => instance.feet.Count; private set { } }
+    public static int earCount { get => instance.ears.Count; private set { } }
     public static Body instance;
     public List<Arm> arms = new List<Arm>();
     public List<Finger> fingers = new List<Finger>();
@@ -87,6 +94,11 @@ public class Body : MonoBehaviour
         MemberCollider mc = t.GetComponent<MemberCollider>();
         mc.member = m;
         m.memberCollider = mc;
+        if (!mc.isActiveByDefault)
+        {
+            m.active = false;
+            mc.gameObject.SetActive(false);
+        }
     }
 
 }
@@ -101,6 +113,11 @@ public class Member
         memberCollider.gameObject.SetActive(false);
     }
 
+    public virtual void Grow()
+    {
+        active = true;
+        memberCollider.gameObject.SetActive(true);
+    }
 }
 
 public class Arm : Member
@@ -116,11 +133,31 @@ public class Arm : Member
             f.Cut();
         }
     }
+
+    public override void Grow()
+    {
+        base.Grow();
+        foreach (Finger finger in fingers)
+        {
+            if (Random.Range(0, 2) == 0)
+            {
+                finger.Grow();
+            }
+        }
+    }
 }
 
 public class Finger : Member
 {
     public Arm arm;
+    public override void Grow()
+    {
+        if (!arm.active)
+        {
+            Debug.LogWarning("Trying to grow a finger with no arm to attach");
+        }
+        base.Grow();
+    }
 }
 
 public class Leg : Member
@@ -132,11 +169,29 @@ public class Leg : Member
         memberCollider.gameObject.SetActive(false);
         foot.Cut();
     }
+
+    public override void Grow()
+    {
+        base.Grow();
+        if (Random.Range(0, 2) == 0)
+        {
+            foot.Grow();
+        }
+    }
 }
 
 public class Foot : Member
 {
     public Leg leg;
+
+    public override void Grow()
+    {
+        if (!leg.active)
+        {
+            Debug.LogWarning("Trying to grow a foot with no leg to attach");
+        }
+        base.Grow();
+    }
 }
 
 public class Eye : Member
