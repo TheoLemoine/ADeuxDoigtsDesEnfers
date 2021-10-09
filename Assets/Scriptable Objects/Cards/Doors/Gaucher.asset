@@ -15,7 +15,7 @@ MonoBehaviour:
   title: Gaucher
   image: {fileID: 0}
   effectText: Avoir plus de doigts gauche que de doigts droit
-  narrationText: Vous passez la porte et continuez votre chemin
+  narrationText: Vous passez la porte et continuez votre chemin.
   memberInvolved: 0
   rightHasLess: 1
   rightHasEqual: 0

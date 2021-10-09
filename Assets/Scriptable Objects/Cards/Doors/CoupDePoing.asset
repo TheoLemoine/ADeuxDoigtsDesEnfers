@@ -15,5 +15,5 @@ MonoBehaviour:
   title: Coup de Poing
   image: {fileID: 0}
   effectText: Avoir une main avec aucun doigt
-  narrationText: Vous passez la porte et continuez votre chemin
+  narrationText: Vous passez la porte et continuez votre chemin.
   nbFingerNeeded: 0

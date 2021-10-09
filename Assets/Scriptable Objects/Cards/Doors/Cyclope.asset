@@ -15,7 +15,7 @@ MonoBehaviour:
   title: Cyclope
   image: {fileID: 0}
   effectText: "Avoir un seul oeil central\t"
-  narrationText: Vous passez la porte et continuez votre chemin
+  narrationText: Vous passez la porte et continuez votre chemin.
   index: 2
   hasNot: 0
   hasOnly: 1

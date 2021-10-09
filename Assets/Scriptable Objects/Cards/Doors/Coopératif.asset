@@ -15,5 +15,5 @@ MonoBehaviour:
   title: "Coop\xE9ratif"
   image: {fileID: 0}
   effectText: Avoir aucun bras gauche
-  narrationText: Vous passez la porte et continuez votre chemin
+  narrationText: Vous passez la porte et continuez votre chemin.
   noRightArms: 0

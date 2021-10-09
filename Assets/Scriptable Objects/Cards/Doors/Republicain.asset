@@ -15,7 +15,7 @@ MonoBehaviour:
   title: "R\xE9publicain"
   image: {fileID: 0}
   effectText: Ne pas avoir d'oreille gauche
-  narrationText: Vous passez la porte et continuez votre chemin
+  narrationText: Vous passez la porte et continuez votre chemin.
   index: 0
   hasNot: 1
   hasOnly: 0

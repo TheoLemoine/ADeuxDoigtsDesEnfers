@@ -15,7 +15,7 @@ MonoBehaviour:
   title: Jambier
   image: {fileID: 0}
   effectText: Avoir plus de jambes que de bras
-  narrationText: Vous passez la porte et continuez votre chemin
+  narrationText: Vous passez la porte et continuez votre chemin.
   firstMemberInvolved: 2
   less: 0
   equal: 0

@@ -15,5 +15,5 @@ MonoBehaviour:
   title: Antagoniste
   image: {fileID: 0}
   effectText: Avoir aucun bras droit
-  narrationText: Vous passez la porte et continuez votre chemin
+  narrationText: Vous passez la porte et continuez votre chemin.
   noRightArms: 1
