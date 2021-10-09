@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b39e3250e1420840a0663d2b5dfb99a, type: 3}
   m_Name: Homogene
   m_EditorClassIdentifier: 
-  title: Homogene
+  title: "Homog\xE8ne"
   image: {fileID: 0}
   effectText: "Avoir le m\xEAme nombre de doigts \xE0 chaque main"
   narrationText: 

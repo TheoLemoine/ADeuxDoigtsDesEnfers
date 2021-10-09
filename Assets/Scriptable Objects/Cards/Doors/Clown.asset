@@ -9,11 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fb8811fa23494346a90b9ab3288d701, type: 3}
-  m_Name: Tennisman
-  m_EditorClassIdentifier: Assembly-CSharp:ScriptableObjects.Cards.Doors:OddNumberOfMembersDoorCard
-  title: Tennisman
+  m_Script: {fileID: 11500000, guid: 9bdc27dd57313a14daec28dc708671dc, type: 3}
+  m_Name: Clown
+  m_EditorClassIdentifier: 
+  title: Clown
   image: {fileID: 0}
-  effectText: Avoir un nombre impair de bras
+  effectText: Avoir plus de bras que de jambe
   narrationText: 
-  member: 1
+  firstMemberInvolved: 2
+  less: 1
+  equal: 0
+  more: 0
+  secondMemberInvolved: 1

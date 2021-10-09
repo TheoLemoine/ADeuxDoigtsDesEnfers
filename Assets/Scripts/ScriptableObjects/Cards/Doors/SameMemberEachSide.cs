@@ -2,7 +2,7 @@ using UnityEngine;
 namespace ScriptableObjects.Cards.Doors
 {
     [CreateAssetMenu(fileName = "DoorCard", menuName = "Scriptable/Card/Door/Same Amount Member Each Side", order = 1)]
-    public class SameAmountMemberEachSideDoorCard : ADoorCard
+    public class SameMemberEachSide : ADoorCard
     {
 
         public override bool CanGoThrough()

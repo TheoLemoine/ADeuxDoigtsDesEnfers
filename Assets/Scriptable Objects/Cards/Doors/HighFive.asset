@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: High Five
   image: {fileID: 0}
-  effectText: Avoir une main avec cinq doigt
+  effectText: Avoir une main avec cinq doigts
   narrationText: 
   nbFingerNeeded: 5
