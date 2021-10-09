@@ -2,6 +2,6 @@
 {
     public abstract class AEventCard : ACard
     {
-        public abstract void RunEffect();
+        public override bool CanGoThrough() => true;
     }
 }

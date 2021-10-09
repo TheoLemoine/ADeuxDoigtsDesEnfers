@@ -14,13 +14,11 @@ namespace ScriptableObjects.Cards.Events
             {
                 if (effect.value < 0)
                 {
-                    // cut members
-                    Debug.Log($"Cutting {-effect.value} {effect.member}");
+                    Cutter.CutMemberAtRandom(effect.member, -effect.value);
                 } 
                 else if (effect.value > 0)
                 {
-                    // grow members
-                    Debug.Log($"Growing {effect.value} {effect.member}");
+                    Grower.GrowMemberAtRandom(effect.member, effect.value);
                 }
             }
         }

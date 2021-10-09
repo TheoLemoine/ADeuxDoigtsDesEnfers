@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 
 [ExecuteAlways]
-public class CardDrawer : MonoBehaviour
+public class CardDataSetter : MonoBehaviour
 {
     public ACard card;
     [SerializeField] private SpriteRenderer illustrationRenderer;
