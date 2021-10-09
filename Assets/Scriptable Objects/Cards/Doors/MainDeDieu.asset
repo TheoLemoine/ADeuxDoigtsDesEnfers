@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fb8811fa23494346a90b9ab3288d701, type: 3}
-  m_Name: Tennisman
-  m_EditorClassIdentifier: Assembly-CSharp:ScriptableObjects.Cards.Doors:OddNumberOfMembersDoorCard
-  title: Tennisman
+  m_Script: {fileID: 11500000, guid: c2ef4a6d70c24f35a67c4c20c9224462, type: 3}
+  m_Name: MainDeDieu
+  m_EditorClassIdentifier: 
+  title: Main de Dieu
   image: {fileID: 0}
-  effectText: Avoir un nombre impair de bras
+  effectText: Avoir une main avec sept doigts
   narrationText: 
-  member: 1
+  nbFingerNeeded: 7

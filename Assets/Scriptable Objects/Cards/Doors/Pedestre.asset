@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bdc27dd57313a14daec28dc708671dc, type: 3}
   m_Name: Pedestre
   m_EditorClassIdentifier: 
-  title: Pedestre
+  title: "P\xE9destre"
   image: {fileID: 0}
   effectText: Avoir autant de pieds que de doigts
   narrationText: 

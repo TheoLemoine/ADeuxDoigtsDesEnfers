@@ -1,8 +1,8 @@
 using UnityEngine;
 namespace ScriptableObjects.Cards.Doors
 {
-    [CreateAssetMenu(fileName = "DoorCard", menuName = "Scriptable/Card/Door/Compare Member Amount", order = 1)]
-    public class TwoFiveFingerHandDoorCard : ADoorCard
+    [CreateAssetMenu(fileName = "DoorCard", menuName = "Scriptable/Card/Door/Two Five Fingered Hand", order = 1)]
+    public class TwoHandFiveFingerDoorCard : ADoorCard
     {
 
         public override bool CanGoThrough()

@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6fb8811fa23494346a90b9ab3288d701, type: 3}
-  m_Name: Tennisman
+  m_Name: Dahu
   m_EditorClassIdentifier: Assembly-CSharp:ScriptableObjects.Cards.Doors:OddNumberOfMembersDoorCard
-  title: Tennisman
+  title: Dahu
   image: {fileID: 0}
-  effectText: Avoir un nombre impair de bras
+  effectText: Avoir un nombre impair de jambe
   narrationText: 
-  member: 1
+  member: 2

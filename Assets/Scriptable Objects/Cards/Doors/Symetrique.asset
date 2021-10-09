@@ -9,11 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fb8811fa23494346a90b9ab3288d701, type: 3}
-  m_Name: Tennisman
-  m_EditorClassIdentifier: Assembly-CSharp:ScriptableObjects.Cards.Doors:OddNumberOfMembersDoorCard
-  title: Tennisman
+  m_Script: {fileID: 11500000, guid: c784ed84816e59e438b6f622fc8d83d0, type: 3}
+  m_Name: Symetrique
+  m_EditorClassIdentifier: Assembly-CSharp:ScriptableObjects.Cards.Doors:SameAmountMemberEachSideDoorCard
+  title: Symetrique
   image: {fileID: 0}
-  effectText: Avoir un nombre impair de bras
+  effectText: "Avoir le m\xEAme nombre de bras et de jambes de chaque c\xF4t\xE9"
   narrationText: 
-  member: 1
