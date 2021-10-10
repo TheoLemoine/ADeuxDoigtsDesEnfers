@@ -7,35 +7,38 @@ public class Cutter
 {
     public static void CutMemberAtRandom(Members member, int amount)
     {
+        bool oneHasGrown = false;
         for (int i = 0; i < amount; i++)
         {
             switch (member)
             {
                 case Members.Arm:
-                    CutArmAtRandom();
+                    oneHasGrown = oneHasGrown || CutArmAtRandom();
                     break;
                 case Members.Ear:
-                    CutEarAtRandom();
+                    oneHasGrown = oneHasGrown || CutEarAtRandom();
                     break;
                 case Members.Eye:
-                    CutEyeAtRandom();
+                    oneHasGrown = oneHasGrown || CutEyeAtRandom();
                     break;
                 case Members.Finger:
-                    CutFingerAtRandom();
+                    oneHasGrown = oneHasGrown || CutFingerAtRandom();
                     break;
                 case Members.Foot:
-                    CutFootAtRandom();
+                    oneHasGrown = oneHasGrown || CutFootAtRandom();
                     break;
                 case Members.Leg:
-                    CutLegAtRandom();
+                    oneHasGrown = oneHasGrown || CutLegAtRandom();
                     break;
                 case Members.Nose:
-                    CutNoseAtRandom();
+                    oneHasGrown = oneHasGrown || CutNoseAtRandom();
                     break;
             }
         }
+        if (oneHasGrown)
+            SoundEffectHelper.instance.MakeCutingSound();
     }
-    static void CutFingerAtRandom()
+    static bool CutFingerAtRandom()
     {
         List<Member> list = new List<Member>();
         foreach (Member member in Body.instance.fingers)
@@ -49,7 +52,9 @@ public class Cutter
         {
             int randomInt = Random.Range(0, list.Count);
             list[randomInt].Cut();
+            return true;
         }
+        return false;
     }
 
     [MenuItem("Cutter/Cut Finger at random")]
@@ -58,7 +63,7 @@ public class Cutter
         CutFingerAtRandom();
     }
 
-    static void CutArmAtRandom()
+    static bool CutArmAtRandom()
     {
         List<Member> list = new List<Member>();
         foreach (Member member in Body.instance.arms)
@@ -72,7 +77,9 @@ public class Cutter
         {
             int randomInt = Random.Range(0, list.Count);
             list[randomInt].Cut();
+            return true;
         }
+        return false;
     }
 
     [MenuItem("Cutter/Cut Arm at random")]
@@ -81,7 +88,7 @@ public class Cutter
         CutArmAtRandom();
     }
 
-    static void CutFootAtRandom()
+    static bool CutFootAtRandom()
     {
         List<Member> list = new List<Member>();
         foreach (Member member in Body.instance.feet)
@@ -95,7 +102,9 @@ public class Cutter
         {
             int randomInt = Random.Range(0, list.Count);
             list[randomInt].Cut();
+            return true;
         }
+        return false;
     }
 
     [MenuItem("Cutter/Cut Foot at random")]
@@ -104,7 +113,7 @@ public class Cutter
         CutFootAtRandom();
     }
 
-    static void CutLegAtRandom()
+    static bool CutLegAtRandom()
     {
         List<Member> list = new List<Member>();
         foreach (Member member in Body.instance.legs)
@@ -118,7 +127,9 @@ public class Cutter
         {
             int randomInt = Random.Range(0, list.Count);
             list[randomInt].Cut();
+            return true;
         }
+        return false;
     }
 
     [MenuItem("Cutter/Cut Leg at random")]
@@ -127,7 +138,7 @@ public class Cutter
         CutLegAtRandom();
     }
 
-    static void CutEyeAtRandom()
+    static bool CutEyeAtRandom()
     {
         List<Member> list = new List<Member>();
 
@@ -142,7 +153,9 @@ public class Cutter
         {
             int randomInt = Random.Range(0, list.Count);
             list[randomInt].Cut();
+            return true;
         }
+        return false;
     }
 
     [MenuItem("Cutter/Cut Eye at random")]
@@ -151,7 +164,7 @@ public class Cutter
         CutEyeAtRandom();
     }
 
-    static void CutEarAtRandom()
+    static bool CutEarAtRandom()
     {
         List<Member> list = new List<Member>();
 
@@ -166,7 +179,9 @@ public class Cutter
         {
             int randomInt = Random.Range(0, list.Count);
             list[randomInt].Cut();
+            return true;
         }
+        return false;
     }
 
     [MenuItem("Cutter/Cut Ear at random")]
@@ -175,7 +190,7 @@ public class Cutter
         CutEarAtRandom();
     }
 
-    static void CutNoseAtRandom()
+    static bool CutNoseAtRandom()
     {
         List<Member> list = new List<Member>();
 
@@ -190,7 +205,9 @@ public class Cutter
         {
             int randomInt = Random.Range(0, list.Count);
             list[randomInt].Cut();
+            return true;
         }
+        return false;
     }
 
     [MenuItem("Cutter/Cut Nose at random")]
