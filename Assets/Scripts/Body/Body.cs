@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 public class Body : MonoBehaviour
 {
@@ -213,6 +214,53 @@ public class Body : MonoBehaviour
 
         }
         return total;
+    }
+#if UNITY_EDITOR
+    [MenuItem("Grower/Reset Body")]
+#endif
+    public static void ResetBody()
+    {
+        Body.instance.ResetTheBody();
+    }
+    private void ResetTheBody()
+    {
+        foreach (Member member in arms)
+        {
+            member.active = member.memberCollider.isActiveByDefault;
+            member.memberCollider.gameObject.SetActive(member.memberCollider.isActiveByDefault);
+        }
+        foreach (Member member in fingers)
+        {
+            member.active = member.memberCollider.isActiveByDefault;
+            member.memberCollider.gameObject.SetActive(member.memberCollider.isActiveByDefault);
+        }
+        foreach (Member member in legs)
+        {
+            member.active = member.memberCollider.isActiveByDefault;
+            member.memberCollider.gameObject.SetActive(member.memberCollider.isActiveByDefault);
+        }
+        foreach (Member member in feet)
+        {
+            member.active = member.memberCollider.isActiveByDefault;
+            member.memberCollider.gameObject.SetActive(member.memberCollider.isActiveByDefault);
+        }
+        foreach (Member member in eyes)
+        {
+            member.active = member.memberCollider.isActiveByDefault;
+            member.memberCollider.gameObject.SetActive(member.memberCollider.isActiveByDefault);
+        }
+        foreach (Member member in ears)
+        {
+            member.active = member.memberCollider.isActiveByDefault;
+            member.memberCollider.gameObject.SetActive(member.memberCollider.isActiveByDefault);
+        }
+
+        foreach (Member member in nose)
+        {
+            member.active = member.memberCollider.isActiveByDefault;
+            member.memberCollider.gameObject.SetActive(member.memberCollider.isActiveByDefault);
+        }
+        SoundEffectHelper.instance.MakeGrowSound();
     }
 
 }
