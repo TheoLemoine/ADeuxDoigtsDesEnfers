@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: "S\xE9rrure Vide"
   m_EditorClassIdentifier: 
   title: "Serrure \xE9trange"
-  image: {fileID: 21300000, guid: dd673e76e60888b4193e2ffa400a2213, type: 3}
+  image: {fileID: 21300000, guid: 9af121ce946fae84e9b25c5e0df732d5, type: 3}
   effectText: "Une mysterieuse s\xE9rrure au mur, pourquoi pas jeter un oeil ?"
   narrationText: "C'est d\xE9cevant, vous ve voyez qu'une piece vide.\nVous continuez
     votre chemin et. Surprise ! Encore des portes."

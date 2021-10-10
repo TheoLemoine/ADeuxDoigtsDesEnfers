@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: _Start Door
   m_EditorClassIdentifier: 
   title: "Entr\xE9e du labyrinthe"
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 8b8d3630a5fd6064184f7bf9406a6390, type: 3}
   effectText: "Vous devez sacrifier un doigt pour entrer. (cliquez sur un doigt du
     personage \xE0 gauche)"
   narrationText: "Vous vous \xEAtes coup\xE9 un doigt et \xEAtes rentr\xE9 dans le

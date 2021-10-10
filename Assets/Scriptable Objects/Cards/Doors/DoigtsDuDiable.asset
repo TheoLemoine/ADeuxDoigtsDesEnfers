@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DoigtsDuDiable
   m_EditorClassIdentifier: 
   title: Doigts du diable
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 8b8d3630a5fd6064184f7bf9406a6390, type: 3}
   effectText: Avoir 13 doigts au total
   narrationText: Vous passez la porte et continuez votre chemin.
   memberInvolved: 0

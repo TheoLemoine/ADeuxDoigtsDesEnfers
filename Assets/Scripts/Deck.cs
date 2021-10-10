@@ -42,11 +42,7 @@ public class Deck : MonoBehaviour
         {
             var isLast = nbCard == cardPosition.Count;
             DrawCard(
-                targetTransform.position + new Vector3(
-                    Random.Range(-0.2f, 0.2f), 
-                    Random.Range(-0.2f, 0.2f), 
-                    Random.Range(-0.2f, 0.2f)
-                    ), 
+                targetTransform.position, 
                 isLast,
                 nbCard,
                 ref drawnCards

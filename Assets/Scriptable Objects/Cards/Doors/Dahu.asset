@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dahu
   m_EditorClassIdentifier: Assembly-CSharp:ScriptableObjects.Cards.Doors:OddNumberOfMembersDoorCard
   title: Dahu
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 866299ff7537c5b43b3dd7d8951cae87, type: 3}
   effectText: Avoir un nombre impair de jambe
   narrationText: Vous passez la porte et continuez votre chemin.
   member: 2

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Tennisman
   m_EditorClassIdentifier: Assembly-CSharp:ScriptableObjects.Cards.Doors:OddNumberOfMembersDoorCard
   title: Tennisman
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 79acb85ca87c59d4d876b403e0c6e1af, type: 3}
   effectText: Avoir un nombre impair de bras
   narrationText: Vous passez la porte et continuez votre chemin.
   member: 1

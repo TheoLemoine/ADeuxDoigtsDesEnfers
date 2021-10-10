@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Homogene
   m_EditorClassIdentifier: 
   title: "Homog\xE8ne"
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 8b8d3630a5fd6064184f7bf9406a6390, type: 3}
   effectText: "Avoir le m\xEAme nombre de doigts \xE0 chaque main"
   narrationText: Vous passez la porte et continuez votre chemin.

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Antagoniste
   m_EditorClassIdentifier: 
   title: Antagoniste
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 79acb85ca87c59d4d876b403e0c6e1af, type: 3}
   effectText: Avoir aucun bras droit
   narrationText: Vous passez la porte et continuez votre chemin.
   noRightArms: 1

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Sourd
   m_EditorClassIdentifier: 
   title: Sourd
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 8e781e909fd872241bad6a791ca0dbf0, type: 3}
   effectText: Avoir aucune oreille
   narrationText: Vous passez la porte et continuez votre chemin.
   memberInvolved: 6

@@ -16,6 +16,6 @@ MonoBehaviour:
   image: {fileID: 21300000, guid: dd673e76e60888b4193e2ffa400a2213, type: 3}
   effectText: "Un coffre en m\xE9tal, un peu along\xE9, peut etre contien-il des
     membres ?"
-  narrationText: "Le coffre est verrouill\xE9, impossible de l'ouvrir.\nD\xE9cu,
+  narrationText: "Le coffre est verrouill\xE9, impossible de l'ouvrir.\nD\xE9\xE7u,
     vous continuez votre route vers d'autres portes."
   effectList: []
