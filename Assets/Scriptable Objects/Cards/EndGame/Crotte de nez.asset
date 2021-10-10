@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 278efb2fd9954a53a33603e4221a0d2f, type: 3}
-  m_Name: Lymphe
+  m_Name: Crotte de nez
   m_EditorClassIdentifier: 
-  title: "Lymphe d'immortalit\xE9"
+  title: Crotte de nez d'abondance.
   image: {fileID: 0}
   effectText: "L'immortalit\xE9 que vous cherchez !\nMais derierre une grille qui
     ne s'ouvrira que si vous avez 1 nez et 15 doigts..."

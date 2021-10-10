@@ -8,7 +8,7 @@ namespace ScriptableObjects.Cards.Events
     {
         public override void RunEffect()
         {
-            // do reset
+            Body.ResetBody();
         }
     }
 }
