@@ -7,8 +7,32 @@ public class MemberCollider : MonoBehaviour
 {
     public bool isActiveByDefault;
     public Member member;
+    SpriteRenderer spriteRenderer;
     private void OnMouseUpAsButton()
     {
         member.Cut();
+    }
+
+    private void OnMouseOver()
+    {
+        if (spriteRenderer == null)
+        {
+            spriteRenderer = GetComponent<SpriteRenderer>();
+        }
+        spriteRenderer.color = new Color(1, 0.5f, 0.5f, 1);
+    }
+
+    private void OnMouseExit()
+    {
+        if (spriteRenderer == null)
+        {
+            spriteRenderer = GetComponent<SpriteRenderer>();
+        }
+        spriteRenderer.color = new Color(1, 1, 1, 1);
+    }
+
+    public void GoBackWhite()
+    {
+        OnMouseExit();
     }
 }

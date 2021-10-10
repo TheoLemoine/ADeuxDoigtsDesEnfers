@@ -227,6 +227,7 @@ public class Member
         if (active) ragdoll.DoRagdoll();
         active = false;
         memberCollider.gameObject.SetActive(false);
+        memberCollider.GoBackWhite();
     }
 
     public virtual void Grow()
