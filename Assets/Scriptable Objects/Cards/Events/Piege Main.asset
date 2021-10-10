@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Piege Main
   m_EditorClassIdentifier: 
   title: "Piege \xE0 ours"
-  image: {fileID: 21300000, guid: dd673e76e60888b4193e2ffa400a2213, type: 3}
+  image: {fileID: 21300000, guid: 6f57969dd5091bb45931f389b07982d2, type: 3}
   effectText: "Un pied dans un pi\xE8ge \xE0 ours, laiss\xE9 l\xE0 par son propri\xE9taire."
   narrationText: "Le pi\xE8ge se referme sur votre main, vous y perdez quelques doigts.
     Pas grave, vous en trouverez bien d'autres.\r\nQuelques m\xE8tres plus loin,

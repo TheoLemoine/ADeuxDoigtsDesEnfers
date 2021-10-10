@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Vessie
   m_EditorClassIdentifier: 
   title: "La sacr\xE9e vessie "
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: b5ae86761a9130f44afea64738896f70, type: 3}
   effectText: "L'immortalit\xE9 que vous cherchez !\nMais derri\xE8re une grille
     qui ne s'ouvrira que si vous avez 3 jambes..."
   narrationText: "Vous buvez le contenu de la vessie, enfin, l'immortalit\xE9 tant
