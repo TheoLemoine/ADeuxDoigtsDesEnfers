@@ -7,6 +7,7 @@ public class Cutter
 {
     public static void CutMemberAtRandom(Members member, int amount)
     {
+        SoundEffectHelper.instance.MakeCutingSound();
         for (int i = 0; i < amount; i++)
         {
             switch (member)

@@ -10,6 +10,7 @@ public class MemberCollider : MonoBehaviour
     SpriteRenderer spriteRenderer;
     private void OnMouseUpAsButton()
     {
+        SoundEffectHelper.instance.MakeCutingSound();
         member.Cut();
     }
 
