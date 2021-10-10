@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using ScriptableObjects;
@@ -19,12 +20,22 @@ public class Deck : MonoBehaviour
 
     private void Start()
     {
-        drawOn.OnTriggered += () => StartCoroutine(DrawCards());
+        drawOn.OnTriggered += DoDrawCard;
+    }
+
+    private void OnDestroy()
+    {
+        drawOn.OnTriggered -= DoDrawCard;
+    }
+
+    private void DoDrawCard()
+    {
+        StartCoroutine(DrawCards());
     }
 
     private IEnumerator DrawCards()
     {
-        var drawnCards = new List<ACard>();
+        var drawnCards = new List<string>();
         var nbCard = 1;
 
         foreach (var targetTransform in cardPosition)
@@ -47,7 +58,7 @@ public class Deck : MonoBehaviour
         }
     }
 
-    private void DrawCard(Vector3 position, bool drawDefault, int zpos, ref List<ACard> alreadyDrawnCard)
+    private void DrawCard(Vector3 position, bool drawDefault, int zpos, ref List<string> alreadyDrawnCard)
     {
         ACard drawnCard;
 
@@ -60,7 +71,9 @@ public class Deck : MonoBehaviour
             do
             {
                 drawnCard = cards[Random.Range(0, cards.Count)];
-            } while (alreadyDrawnCard.Contains(drawnCard));
+            } while (alreadyDrawnCard.Contains(drawnCard.title));
+            
+            alreadyDrawnCard.Add(drawnCard.title);
         }
 
         var cardGO = Instantiate(cardPrefab, startTransform.position, Quaternion.identity);
