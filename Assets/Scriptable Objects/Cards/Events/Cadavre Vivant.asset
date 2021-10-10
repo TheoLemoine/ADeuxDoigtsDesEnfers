@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Cadavre puant
   image: {fileID: 21300000, guid: f3b49036c104ce54bbda856a6a0af43c, type: 3}
-  effectText: Un cadavre puant, remplis de vers, vous pourriez peut etre en tirer
-    quelque chose ?
+  effectText: "Un cadavre puant, remplis de vers, vous pourriez peut \xEAtre en tirer
+    quelque chose ?"
   narrationText: "Surprise ! Ce n'\xE9tait pas encore un cadavre, m\xE9content, le
     monsieur vous mort le nez.\nVous partez sans demander votre reste et trouvez
     de nouvelles portes."

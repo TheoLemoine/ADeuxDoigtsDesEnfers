@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Main de rechange
   image: {fileID: 21300000, guid: 3179283c272f24941be8b71555c9b90d, type: 3}
-  effectText: Une main de manequin qui traine, pourquoi pas.
+  effectText: Une main de mannequin qui traine, pourquoi pas ?
   narrationText: "Une main de chair, une main de bois, qui fera la diff\xE9rence
-    ?\nUn peu plus loin, une nouvelle s\xE9rie de portes."
+    ?\r\nUn peu plus loin, une nouvelle s\xE9rie de portes.\r"
   effectList:
   - value: 5
     member: 0

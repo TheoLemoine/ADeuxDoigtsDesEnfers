@@ -15,11 +15,13 @@ MonoBehaviour:
   title: Garde-manger
   image: {fileID: 21300000, guid: 630f47c77efefdc449c068831c049e7c, type: 3}
   effectText: Un petit creux ?
-  narrationText: 'Pas de norriture, dommage, mais quelques doigts qui trainnent.
+  narrationText: 'Pas de nourriture, dommage, mais quelques doigts qui trainent.
     On trouve vraiment de tout par ici !
 
     Vous continuez votre chemin vers les
-    portes suivantes.'
+    portes suivantes.
+
+'
   effectList:
   - value: 3
     member: 0

@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: "Potion \xE9trange"
   image: {fileID: 21300000, guid: dd673e76e60888b4193e2ffa400a2213, type: 3}
-  effectText: Une fiole contenant un liquide myserieux, le boire ?
+  effectText: "Une fiole contenant un liquide myst\xE9rieux, voulez-vous le boire
+    ?"
   narrationText: "Apr\xE8s quelques maux de ventre, un nouveau bras pousse, pratique
     !\nEn continuant, vous trouvez de nouvelles portes."
   effectList:
