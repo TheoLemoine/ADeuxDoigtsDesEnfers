@@ -13,25 +13,25 @@ public class Cutter
             switch (member)
             {
                 case Members.Arm:
-                    oneHasGrown = oneHasGrown || CutArmAtRandom();
+                    oneHasGrown = CutArmAtRandom() || oneHasGrown;
                     break;
                 case Members.Ear:
-                    oneHasGrown = oneHasGrown || CutEarAtRandom();
+                    oneHasGrown = CutEarAtRandom() || oneHasGrown;
                     break;
                 case Members.Eye:
-                    oneHasGrown = oneHasGrown || CutEyeAtRandom();
+                    oneHasGrown = CutEyeAtRandom() || oneHasGrown;
                     break;
                 case Members.Finger:
-                    oneHasGrown = oneHasGrown || CutFingerAtRandom();
+                    oneHasGrown = CutFingerAtRandom() || oneHasGrown;
                     break;
                 case Members.Foot:
-                    oneHasGrown = oneHasGrown || CutFootAtRandom();
+                    oneHasGrown = CutFootAtRandom() || oneHasGrown;
                     break;
                 case Members.Leg:
-                    oneHasGrown = oneHasGrown || CutLegAtRandom();
+                    oneHasGrown = CutLegAtRandom() || oneHasGrown;
                     break;
                 case Members.Nose:
-                    oneHasGrown = oneHasGrown || CutNoseAtRandom();
+                    oneHasGrown = CutNoseAtRandom() || oneHasGrown;
                     break;
             }
         }
@@ -61,7 +61,7 @@ public class Cutter
 #endif
     static void CutFinger()
     {
-        CutFingerAtRandom();
+        CutMemberAtRandom(Members.Finger, 3);
     }
 
     static bool CutArmAtRandom()
