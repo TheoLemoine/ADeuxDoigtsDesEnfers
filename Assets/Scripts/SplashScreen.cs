@@ -19,8 +19,6 @@ public class SplashScreen : MonoBehaviour
         {
             
             var progress = elapsed / fadeDuration;
-            
-            Debug.Log(progress);
 
             spriteRenderer.color = new Color(0, 0, 0, 1 - progress);
 
