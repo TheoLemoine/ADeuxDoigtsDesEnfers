@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp:ScriptableObjects.Cards.Doors:CompareLeftRightNumberDoorCard
   title: Droitier
   image: {fileID: 21300000, guid: 8b8d3630a5fd6064184f7bf9406a6390, type: 3}
-  effectText: Avoir plus de doigts droit que de doigts gauche
+  effectText: Avoir plus de doigts droits que de doigts gauches
   narrationText: Vous passez la porte et continuez votre chemin.
   memberInvolved: 0
   rightHasLess: 0
