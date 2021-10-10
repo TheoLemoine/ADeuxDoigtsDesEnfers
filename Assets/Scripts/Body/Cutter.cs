@@ -56,8 +56,9 @@ public class Cutter
         }
         return false;
     }
-
+#if UNITY_EDITOR
     [MenuItem("Cutter/Cut Finger at random")]
+#endif
     static void CutFinger()
     {
         CutFingerAtRandom();
@@ -82,7 +83,9 @@ public class Cutter
         return false;
     }
 
+#if UNITY_EDITOR
     [MenuItem("Cutter/Cut Arm at random")]
+#endif
     static void CutArm()
     {
         CutArmAtRandom();
@@ -107,7 +110,9 @@ public class Cutter
         return false;
     }
 
+#if UNITY_EDITOR
     [MenuItem("Cutter/Cut Foot at random")]
+#endif
     static void CutFoot()
     {
         CutFootAtRandom();
@@ -132,7 +137,9 @@ public class Cutter
         return false;
     }
 
+#if UNITY_EDITOR
     [MenuItem("Cutter/Cut Leg at random")]
+#endif
     static void CutLeg()
     {
         CutLegAtRandom();
@@ -158,7 +165,9 @@ public class Cutter
         return false;
     }
 
+#if UNITY_EDITOR
     [MenuItem("Cutter/Cut Eye at random")]
+#endif
     static void CutEye()
     {
         CutEyeAtRandom();
@@ -184,7 +193,9 @@ public class Cutter
         return false;
     }
 
+#if UNITY_EDITOR
     [MenuItem("Cutter/Cut Ear at random")]
+#endif
     static void CutEar()
     {
         CutEarAtRandom();
@@ -210,7 +221,9 @@ public class Cutter
         return false;
     }
 
+#if UNITY_EDITOR
     [MenuItem("Cutter/Cut Nose at random")]
+#endif
     static void CutNose()
     {
         CutNoseAtRandom();

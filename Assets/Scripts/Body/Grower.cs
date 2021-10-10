@@ -58,7 +58,9 @@ public class Grower
         return false;
     }
 
+#if UNITY_EDITOR
     [MenuItem("Grower/Grow Finger at random")]
+#endif
     static void GrowFinger()
     {
         GrowFingerAtRandom();
@@ -83,7 +85,9 @@ public class Grower
         return false;
     }
 
+#if UNITY_EDITOR
     [MenuItem("Grower/Grow Arm at random")]
+#endif
     static void GrowArm()
     {
         GrowArmAtRandom();
@@ -108,7 +112,9 @@ public class Grower
         return false;
     }
 
+#if UNITY_EDITOR
     [MenuItem("Grower/Grow Foot at random")]
+#endif
     static void GrowFoot()
     {
         GrowFootAtRandom();
@@ -133,7 +139,9 @@ public class Grower
         return false;
     }
 
+#if UNITY_EDITOR
     [MenuItem("Grower/Grow Leg at random")]
+#endif
     static void GrowLeg()
     {
         GrowLegAtRandom();
@@ -159,7 +167,9 @@ public class Grower
         return false;
     }
 
+#if UNITY_EDITOR
     [MenuItem("Grower/Grow Eye at random")]
+#endif
     static void GrowEye()
     {
         GrowEyeAtRandom();
@@ -185,7 +195,9 @@ public class Grower
         return false;
     }
 
+#if UNITY_EDITOR
     [MenuItem("Grower/Grow Ear at random")]
+#endif
     static void GrowEar()
     {
         GrowEarAtRandom();
@@ -211,7 +223,9 @@ public class Grower
         return false;
     }
 
+#if UNITY_EDITOR
     [MenuItem("Grower/Grow Nose at random")]
+#endif
     static void GrowNose()
     {
         GrowNoseAtRandom();
