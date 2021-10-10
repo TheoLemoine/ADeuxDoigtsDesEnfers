@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 278efb2fd9954a53a33603e4221a0d2f, type: 3}
   m_Name: Crotte de nez
   m_EditorClassIdentifier: 
-  title: Crotte de nez d'abondance.
+  title: Crotte de nez d'abondance
   image: {fileID: 0}
-  effectText: "L'immortalit\xE9 que vous cherchez !\nMais derierre une grille qui
-    ne s'ouvrira que si vous avez 1 nez et 15 doigts..."
-  narrationText: "Vous buvez la lymphe, ca y est ! Vous \xEAtes immortel.\nVous continurez
-    \xE0 hanter les boyaux du diable avec votre corp difforme pour toujours."
+  effectText: "L'immortalit\xE9 que vous cherchez !\r\nMais derri\xE8re une grille
+    qui ne s'ouvrira que si vous avez 1 nez et 15 doigts...\r"
+  narrationText: "Vous mangez la crotte, \xE7a y est ! Vous \xEAtes immortel.\r\nVous
+    continuerez \xE0 hanter les boyaux du diable avec votre corp difforme pour toujours.\r"
   endGameEvent: {fileID: 11400000, guid: 3406edadac0e741438e190c00cf6c213, type: 2}
   conditions:
   - neededMember: 5

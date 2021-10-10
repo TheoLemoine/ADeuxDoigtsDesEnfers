@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 278efb2fd9954a53a33603e4221a0d2f, type: 3}
   m_Name: Larme
   m_EditorClassIdentifier: 
-  title: Larme de jouvence
+  title: Larmes de jouvence
   image: {fileID: 0}
-  effectText: "L'immortalit\xE9 que vous cherchez !\nMais derierre une grille qui
-    ne s'ouvrira que si vous avez 3 yeux..."
-  narrationText: "Vous vous baignez dans les larmes, votre corp rajeuni et vous sentez
-    que vous \xEAtes devenu immortel.\nVous continurez \xE0 hanter les boyaux du
-    diable avec votre corp difforme pour toujours."
+  effectText: "L'immortalit\xE9 que vous cherchez !\nMais derri\xE8re  une grille
+    qui ne s'ouvrira que si vous avez 3 yeux..."
+  narrationText: "Vous vous baignez dans les larmes, votre corp rajeunie et vous
+    sentez que vous \xEAtes devenu immortel.\r\nVous continuerez \xE0 hanter les
+    boyaux du diable avec votre corp difforme pour toujours.\r"
   endGameEvent: {fileID: 11400000, guid: 3406edadac0e741438e190c00cf6c213, type: 2}
   conditions:
   - neededMember: 4
