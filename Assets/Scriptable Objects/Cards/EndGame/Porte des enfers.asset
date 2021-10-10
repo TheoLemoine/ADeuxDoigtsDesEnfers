@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: La porte des enfers
   image: {fileID: 21300000, guid: 95962d89f81a4cd4193b4aec5d02d3d5, type: 3}
-  effectText: "Sans autre choix, vous abandonnez votre \xE2me et plongez en enfer."
+  effectText: "Rien ne semble restreindre l'acc\xE8s \xE0 cette porte inqui\xE9tante
+    ..."
   narrationText: "Sans nul part autre o\xF9 aller, vous abandonnez votre \xE2me et
     vous dirrigez vers les enfers, pas de retour possible..."
   endGameEvent: {fileID: 11400000, guid: 3406edadac0e741438e190c00cf6c213, type: 2}
