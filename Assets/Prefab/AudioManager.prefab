@@ -43,7 +43,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fbb3c62c3a8b9254da0aaeec9d052587, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.865
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -178,7 +178,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 76104bb4c1b1a374e860623f5dd52866, type: 3}
   - {fileID: 8300000, guid: 90981b70152947645a951cfd8031ca83, type: 3}
   growSound:
-  - {fileID: 8300000, guid: 72287d4977a7bb742b82406395a88c29, type: 3}
+  - {fileID: 8300000, guid: 1575191383b4d9f4ca8e686b7fa604e8, type: 3}
 --- !u!1 &6929026242486721991
 GameObject:
   m_ObjectHideFlags: 0
