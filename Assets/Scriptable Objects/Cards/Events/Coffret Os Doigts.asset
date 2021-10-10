@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Coffret Os Doigts
   m_EditorClassIdentifier: 
   title: Petit coffret en os
-  image: {fileID: 21300000, guid: dd673e76e60888b4193e2ffa400a2213, type: 3}
+  image: {fileID: 21300000, guid: 4b0ce0d8b60a8c64ebddc2425d0fad55, type: 3}
   effectText: Un petit coffret en os, il contient peut etre quelque chose ?
   narrationText: 'Vous ouvrez le coffret, et y trouvez quelques doigts !
 
