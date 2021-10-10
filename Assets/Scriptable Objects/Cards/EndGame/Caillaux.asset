@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 278efb2fd9954a53a33603e4221a0d2f, type: 3}
   m_Name: Caillaux
   m_EditorClassIdentifier: 
-  title: Caillaut de sang philosophal
+  title: Caillot de sang philosophal
   image: {fileID: 21300000, guid: 4205700093ef3c44c8a86b477c0040e7, type: 3}
-  effectText: "L'immortalit\xE9 que vous cherchez !\nMais derierre une grille qui
-    ne s'ouvrira que si vous avez 4 bras..."
-  narrationText: "Le pouvoir du caillaut vous rends immortel ! \nVous continurez
-    \xE0 hanter les boyaux du diable avec votre corp difforme pour toujours."
+  effectText: "L'immortalit\xE9 que vous cherchez !\r\nMais derri\xE8re une grille
+    qui ne s'ouvrira que si vous avez 4 bras...\r"
+  narrationText: "Le pouvoir du caillot vous rend immortel ! \r\nVous continuez \xE0
+    hanter les boyaux du diable avec votre corp difforme pour toujours.\r"
   endGameEvent: {fileID: 11400000, guid: 3406edadac0e741438e190c00cf6c213, type: 2}
   conditions:
   - neededMember: 1
