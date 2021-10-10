@@ -16,5 +16,5 @@ MonoBehaviour:
   image: {fileID: 21300000, guid: 4b0ce0d8b60a8c64ebddc2425d0fad55, type: 3}
   effectText: "Un petit coffret en os, il contient peut-\xEAtre quelque chose ?"
   narrationText: "Vous ouvrez le coffret. Il est vide, quelqu'un a d\xE9j\xE0 d\xFB
-    passer par l\xE0.\nVous marchez (ou rampez) jusqu'au prochaines portes."
+    passer par l\xE0.\nVous marchez (ou rampez) jusqu'aux prochaines portes."
   effectList: []

@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: "Il \xE9tait encore une fois..."
   image: {fileID: 0}
-  effectText: Relancer une partie.
+  effectText: Relancer une partie
   narrationText: 

@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: La sortie !
   image: {fileID: 0}
-  effectText: Quitter le jeu.
+  effectText: Quitter le jeu
   narrationText: 
