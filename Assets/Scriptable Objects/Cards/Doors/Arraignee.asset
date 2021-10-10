@@ -9,15 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9bdc27dd57313a14daec28dc708671dc, type: 3}
-  m_Name: Clown
+  m_Script: {fileID: 11500000, guid: 2d17fa5ee233e334184c37f501736834, type: 3}
+  m_Name: Arraignee
   m_EditorClassIdentifier: 
-  title: Clown
+  title: Insecte
   image: {fileID: 21300000, guid: 79acb85ca87c59d4d876b403e0c6e1af, type: 3}
-  effectText: Avoir plus de bras que de jambes
+  effectText: Avoir un total de six membres
   narrationText: Vous passez la porte et continuez votre chemin.
-  firstMemberInvolved: 2
-  less: 1
-  equal: 0
-  more: 0
-  secondMemberInvolved: 1
+  nbLimbNeeded: 6

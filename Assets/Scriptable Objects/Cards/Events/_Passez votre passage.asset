@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f49ca3dfb464c95baec5027e712e47e, type: 3}
   m_Name: _Passez votre passage
   m_EditorClassIdentifier: 
-  title: Passer votre chemin.
+  title: Passer votre chemin
   image: {fileID: 21300000, guid: 64e10775aea6a39458a81dd075af7316, type: 3}
   effectText: "Rien. Vous continuez \xE0 avancer."
   narrationText: Vous avancez et rencontrez de nouvelles portes...

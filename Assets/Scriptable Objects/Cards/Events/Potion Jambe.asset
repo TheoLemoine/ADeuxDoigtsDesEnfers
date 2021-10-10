@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Potion Jambe
   m_EditorClassIdentifier: 
   title: "Potion \xE9trange"
-  image: {fileID: 21300000, guid: 3d9029ce9f204aa438cba47c300882b1, type: 3}
-  effectText: Une fiole contenant un liquide myserieux, le boire ?
-  narrationText: "Apr\xE8s avoir bu la potion, votre jambe se met a pourrir et tombe...\nEn
-    continuant, vous trouvez de nouvelles portes."
+  image: {fileID: 21300000, guid: dd673e76e60888b4193e2ffa400a2213, type: 3}
+  effectText: "Une fiole contenant un liquide myst\xE9rieux, voulez-vous le boire
+    ?"
+  narrationText: "Apr\xE8s avoir bu la potion, votre jambe se met \xE0 pourrir et
+    tombe...\r\nEn continuant, vous trouvez de nouvelles portes.\r\n"
   effectList:
   - value: -1
     member: 2

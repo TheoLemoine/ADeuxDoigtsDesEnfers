@@ -275,6 +275,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 890b1ffef80b46a4cba67d6e6e1706ce, type: 2}
   - {fileID: 11400000, guid: 8d0d4f29ffb46a74d8710766d29e8283, type: 2}
   - {fileID: 11400000, guid: b756ee4a00cdd5744bcb2b249f2e0ae3, type: 2}
+  - {fileID: 11400000, guid: 4568d4afc6ed8dc48ae261dd22f959e9, type: 2}
   startTransform: {fileID: 3981911027432636336}
   cardPosition:
   - {fileID: 3981911026709425751}

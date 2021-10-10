@@ -14,12 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: "Coffre en m\xE9tal"
   image: {fileID: 21300000, guid: 7605d7fb7e5a3524cabd04927a50d68b, type: 3}
-  effectText: "Un coffre en m\xE9tal, un peu along\xE9, peut etre contien-il des
-    membres ?"
-  narrationText: 'Vous ouvrez le coffre et trouvez un jambe, ca vous fait une belle
-    jambe !
-
-    Un peu plus loin, encore des portes...'
+  effectText: "Un coffre en m\xE9tal, un peu allong\xE9, peut \xEAtre contient-il
+    des membres ?"
+  narrationText: "Vous ouvrez le coffre et trouvez une jambe, \xE7a vous fait une
+    belle jambe !\r\nUn peu plus loin, encore des portes...\r\n"
   effectList:
   - value: 1
     member: 2
