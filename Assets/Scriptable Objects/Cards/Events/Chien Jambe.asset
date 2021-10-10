@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Chien Jambe
   m_EditorClassIdentifier: 
   title: "Cerb\xE8b\xE8re"
-  image: {fileID: 21300000, guid: dd673e76e60888b4193e2ffa400a2213, type: 3}
+  image: {fileID: 21300000, guid: 56ad994aebece0241b400eb2af780851, type: 3}
   effectText: "Un \xE9norme chien, et les restes de son repas de la veille."
   narrationText: "En essayant de r\xE9cup\xE9rer un bras, vous r\xE9v\xE9illez le
     gros toutou. Il vous d\xE9chire une jambe pendant que vous vous enfuyez !\nVous

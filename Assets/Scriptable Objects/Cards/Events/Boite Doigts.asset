@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Boite Doigts
   m_EditorClassIdentifier: 
   title: Doigts en conserve
-  image: {fileID: 21300000, guid: dd673e76e60888b4193e2ffa400a2213, type: 3}
+  image: {fileID: 0}
   effectText: "Une boite de conserve, avec un dessin de doigt dessus, \xE9trange
     mais pratique."
   narrationText: "Vous ouvrez la boite et y trouvez 3 doigts !\nPlus loin, une nouvelle

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Cadavre Jambe
   m_EditorClassIdentifier: 
   title: Cadavre puant
-  image: {fileID: 21300000, guid: dd673e76e60888b4193e2ffa400a2213, type: 3}
+  image: {fileID: 21300000, guid: f3b49036c104ce54bbda856a6a0af43c, type: 3}
   effectText: Un cadavre puant, remplis de vers, vous pourriez peut etre en tirer
     quelque chose ?
   narrationText: "Le cadavre est vraiment en mauvais \xE9tat, vous r\xE9cup\xE9rez

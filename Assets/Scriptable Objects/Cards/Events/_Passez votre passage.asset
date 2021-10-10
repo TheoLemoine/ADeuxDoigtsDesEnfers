@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: _Passez votre passage
   m_EditorClassIdentifier: 
   title: Passer votre chemin.
-  image: {fileID: 21300000, guid: dd673e76e60888b4193e2ffa400a2213, type: 3}
+  image: {fileID: 21300000, guid: 64e10775aea6a39458a81dd075af7316, type: 3}
   effectText: "Rien. Vous continuez \xE0 avancer."
   narrationText: Vous avancez et rencontrez de nouvelles portes...
   effectList: []

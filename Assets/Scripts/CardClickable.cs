@@ -76,7 +76,7 @@ public class CardClickable : MonoBehaviour
         _clickActive = canGoThrough;
         unavailableMask.enabled = !canGoThrough;
         
-        transform.localScale = Vector3.Lerp(transform.localScale, Vector3.one * (_isHovered ? 1f : 0.9f), 0.1f);
+        transform.localScale = Vector3.Lerp(transform.localScale, Vector3.one * (_isHovered ? 1.1f : 1f), 0.1f);
     }
 
     private void DoDiscardCard()

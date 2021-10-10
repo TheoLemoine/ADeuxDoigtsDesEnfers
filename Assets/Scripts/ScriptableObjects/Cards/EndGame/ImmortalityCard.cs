@@ -8,8 +8,6 @@ namespace ScriptableObjects.Cards.EndGame
     public class ImmortalityCard : AEndGameCard
     {
         [SerializeField] private List<SimpleCondition> conditions;
-        
-        public override bool IsWin() => true;
 
         public override bool CanGoThrough() => conditions.All(c => c.IsValid());
     }

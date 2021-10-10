@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Marchande Oeil
   m_EditorClassIdentifier: 
   title: Marchande de doigt
-  image: {fileID: 21300000, guid: dd673e76e60888b4193e2ffa400a2213, type: 3}
+  image: {fileID: 21300000, guid: f1a29661848c38f49a7ba32a295127a0, type: 3}
   effectText: 'Une vielle marchande s''approche de vous, elle murmure : "3 doigts
     pour un membre"'
   narrationText: "Vous vous empressez de vous couper la somme demand\xE9.\r\nApr\xE8s

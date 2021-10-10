@@ -16,7 +16,9 @@ MonoBehaviour:
   image: {fileID: 0}
   effectText: "L'immortalit\xE9 que vous cherchez !\nMais derierre une grille qui
     ne s'ouvrira que si vous avez 4 bras..."
-  narrationText: 
+  narrationText: "Le pouvoir du caillaut vous rends immortel ! \nVous continurez
+    \xE0 hanter les boyaux du diable avec votre corp difforme pour toujours."
+  endGameEvent: {fileID: 11400000, guid: 3406edadac0e741438e190c00cf6c213, type: 2}
   conditions:
   - neededMember: 1
     neededAmount: 4

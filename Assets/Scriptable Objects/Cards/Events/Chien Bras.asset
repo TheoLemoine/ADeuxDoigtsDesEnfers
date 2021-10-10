@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Chien Bras
   m_EditorClassIdentifier: 
   title: "Cerb\xE8b\xE8re"
-  image: {fileID: 21300000, guid: dd673e76e60888b4193e2ffa400a2213, type: 3}
+  image: {fileID: 21300000, guid: 56ad994aebece0241b400eb2af780851, type: 3}
   effectText: "Un \xE9norme chien, et les restes de son repas de la veille."
   narrationText: "Tout doucement, vous vous aprochez, et r\xE9cup\xE9rer ce que vous
     pouvez : les restes d'un bras machouill\xE9.\nVous continuez et. Surptise ! d'autres
