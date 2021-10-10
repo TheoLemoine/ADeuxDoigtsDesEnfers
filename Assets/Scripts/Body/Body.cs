@@ -226,37 +226,51 @@ public class Body : MonoBehaviour
     {
         foreach (Member member in arms)
         {
+            if (member.active && !member.memberCollider.isActiveByDefault)
+                member.ragdoll.DoRagdoll();
             member.active = member.memberCollider.isActiveByDefault;
             member.memberCollider.gameObject.SetActive(member.memberCollider.isActiveByDefault);
         }
         foreach (Member member in fingers)
         {
+            if (member.active && !member.memberCollider.isActiveByDefault)
+                member.ragdoll.DoRagdoll();
             member.active = member.memberCollider.isActiveByDefault;
             member.memberCollider.gameObject.SetActive(member.memberCollider.isActiveByDefault);
         }
         foreach (Member member in legs)
         {
+            if (member.active && !member.memberCollider.isActiveByDefault)
+                member.ragdoll.DoRagdoll();
             member.active = member.memberCollider.isActiveByDefault;
             member.memberCollider.gameObject.SetActive(member.memberCollider.isActiveByDefault);
         }
         foreach (Member member in feet)
         {
+            if (member.active && !member.memberCollider.isActiveByDefault)
+                member.ragdoll.DoRagdoll();
             member.active = member.memberCollider.isActiveByDefault;
             member.memberCollider.gameObject.SetActive(member.memberCollider.isActiveByDefault);
         }
         foreach (Member member in eyes)
         {
+            if (member.active && !member.memberCollider.isActiveByDefault)
+                member.ragdoll.DoRagdoll();
             member.active = member.memberCollider.isActiveByDefault;
             member.memberCollider.gameObject.SetActive(member.memberCollider.isActiveByDefault);
         }
         foreach (Member member in ears)
         {
+            if (member.active && !member.memberCollider.isActiveByDefault)
+                member.ragdoll.DoRagdoll();
             member.active = member.memberCollider.isActiveByDefault;
             member.memberCollider.gameObject.SetActive(member.memberCollider.isActiveByDefault);
         }
 
         foreach (Member member in nose)
         {
+            if (member.active && !member.memberCollider.isActiveByDefault)
+                member.ragdoll.DoRagdoll();
             member.active = member.memberCollider.isActiveByDefault;
             member.memberCollider.gameObject.SetActive(member.memberCollider.isActiveByDefault);
         }
