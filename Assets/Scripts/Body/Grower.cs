@@ -8,35 +8,38 @@ public class Grower
 
     public static void GrowMemberAtRandom(Members member, int amount)
     {
+        bool oneHasGrown = false;
         for (int i = 0; i < amount; i++)
         {
             switch (member)
             {
                 case Members.Arm:
-                    GrowArmAtRandom();
+                    oneHasGrown = oneHasGrown || GrowArmAtRandom();
                     break;
                 case Members.Ear:
-                    GrowEarAtRandom();
+                    oneHasGrown = oneHasGrown || GrowEarAtRandom();
                     break;
                 case Members.Eye:
-                    GrowEyeAtRandom();
+                    oneHasGrown = oneHasGrown || GrowEyeAtRandom();
                     break;
                 case Members.Finger:
-                    GrowFingerAtRandom();
+                    oneHasGrown = oneHasGrown || GrowFingerAtRandom();
                     break;
                 case Members.Foot:
-                    GrowFootAtRandom();
+                    oneHasGrown = oneHasGrown || GrowFootAtRandom();
                     break;
                 case Members.Leg:
-                    GrowLegAtRandom();
+                    oneHasGrown = oneHasGrown || GrowLegAtRandom();
                     break;
                 case Members.Nose:
-                    GrowNoseAtRandom();
+                    oneHasGrown = oneHasGrown || GrowNoseAtRandom();
                     break;
             }
         }
+        if (oneHasGrown)
+            SoundEffectHelper.instance.MakeGrowSound();
     }
-    static void GrowFingerAtRandom()
+    static bool GrowFingerAtRandom()
     {
         List<Member> list = new List<Member>();
         foreach (Member member in Body.instance.fingers)
@@ -50,7 +53,9 @@ public class Grower
         {
             int randomInt = Random.Range(0, list.Count);
             list[randomInt].Grow();
+            return true;
         }
+        return false;
     }
 
     [MenuItem("Grower/Grow Finger at random")]
@@ -59,7 +64,7 @@ public class Grower
         GrowFingerAtRandom();
     }
 
-    static void GrowArmAtRandom()
+    static bool GrowArmAtRandom()
     {
         List<Member> list = new List<Member>();
         foreach (Member member in Body.instance.arms)
@@ -73,7 +78,9 @@ public class Grower
         {
             int randomInt = Random.Range(0, list.Count);
             list[randomInt].Grow();
+            return true;
         }
+        return false;
     }
 
     [MenuItem("Grower/Grow Arm at random")]
@@ -82,7 +89,7 @@ public class Grower
         GrowArmAtRandom();
     }
 
-    static void GrowFootAtRandom()
+    static bool GrowFootAtRandom()
     {
         List<Member> list = new List<Member>();
         foreach (Member member in Body.instance.feet)
@@ -96,7 +103,9 @@ public class Grower
         {
             int randomInt = Random.Range(0, list.Count);
             list[randomInt].Grow();
+            return true;
         }
+        return false;
     }
 
     [MenuItem("Grower/Grow Foot at random")]
@@ -105,7 +114,7 @@ public class Grower
         GrowFootAtRandom();
     }
 
-    static void GrowLegAtRandom()
+    static bool GrowLegAtRandom()
     {
         List<Member> list = new List<Member>();
         foreach (Member member in Body.instance.legs)
@@ -119,7 +128,9 @@ public class Grower
         {
             int randomInt = Random.Range(0, list.Count);
             list[randomInt].Grow();
+            return true;
         }
+        return false;
     }
 
     [MenuItem("Grower/Grow Leg at random")]
@@ -128,7 +139,7 @@ public class Grower
         GrowLegAtRandom();
     }
 
-    static void GrowEyeAtRandom()
+    static bool GrowEyeAtRandom()
     {
         List<Member> list = new List<Member>();
 
@@ -143,7 +154,9 @@ public class Grower
         {
             int randomInt = Random.Range(0, list.Count);
             list[randomInt].Grow();
+            return true;
         }
+        return false;
     }
 
     [MenuItem("Grower/Grow Eye at random")]
@@ -152,7 +165,7 @@ public class Grower
         GrowEyeAtRandom();
     }
 
-    static void GrowEarAtRandom()
+    static bool GrowEarAtRandom()
     {
         List<Member> list = new List<Member>();
 
@@ -167,7 +180,9 @@ public class Grower
         {
             int randomInt = Random.Range(0, list.Count);
             list[randomInt].Grow();
+            return true;
         }
+        return false;
     }
 
     [MenuItem("Grower/Grow Ear at random")]
@@ -176,7 +191,7 @@ public class Grower
         GrowEarAtRandom();
     }
 
-    static void GrowNoseAtRandom()
+    static bool GrowNoseAtRandom()
     {
         List<Member> list = new List<Member>();
 
@@ -191,7 +206,9 @@ public class Grower
         {
             int randomInt = Random.Range(0, list.Count);
             list[randomInt].Grow();
+            return true;
         }
+        return false;
     }
 
     [MenuItem("Grower/Grow Nose at random")]

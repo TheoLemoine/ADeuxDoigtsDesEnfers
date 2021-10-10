@@ -14,6 +14,7 @@ public class SoundEffectHelper : MonoBehaviour
     public static SoundEffectHelper instance;
 
     public List<AudioClip> cutSounds;
+    public List<AudioClip> growSound;
 
     void Awake()
     {
@@ -27,6 +28,11 @@ public class SoundEffectHelper : MonoBehaviour
     public void MakeCutingSound()
     {
         MakeSound(cutSounds[Random.Range(0, cutSounds.Count)]);
+    }
+
+    public void MakeGrowSound()
+    {
+        MakeSound(growSound[Random.Range(0, growSound.Count)]);
     }
 
     /// <summary>

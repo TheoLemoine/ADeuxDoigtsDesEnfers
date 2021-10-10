@@ -176,3 +176,5 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 6ba115b5e6629924eaf67ddfcbf8dc06, type: 3}
   - {fileID: 8300000, guid: 76104bb4c1b1a374e860623f5dd52866, type: 3}
   - {fileID: 8300000, guid: 90981b70152947645a951cfd8031ca83, type: 3}
+  growSound:
+  - {fileID: 8300000, guid: 72287d4977a7bb742b82406395a88c29, type: 3}
