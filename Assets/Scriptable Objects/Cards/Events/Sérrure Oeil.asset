@@ -10,15 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f49ca3dfb464c95baec5027e712e47e, type: 3}
-  m_Name: Coffret Os Oeil
+  m_Name: "S\xE9rrure Oeil"
   m_EditorClassIdentifier: 
-  title: Petit coffret en os
+  title: "Serrure \xE9trange"
   image: {fileID: 21300000, guid: dd673e76e60888b4193e2ffa400a2213, type: 3}
-  effectText: Un petit coffret en os, il contient peut etre quelque chose ?
-  narrationText: 'Vous ouvrez le coffret, et y trouvez un oeil !
-
-    Vous marchez
-    (ou rampez) jusqu''au prochaines portes.'
+  effectText: "Une mysterieuse s\xE9rrure au mur, pourquoi pas jeter un oeil ?"
+  narrationText: "La curiosit\xE9 est un villaind d\xE9faut ! Une lame sort de la
+    serrure et vour cr\xE8ve l'oeil.\nVous continuez tant bien que mal, et surprise,
+    encore des portes."
   effectList:
-  - value: 1
+  - value: -1
     member: 4

@@ -10,15 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f49ca3dfb464c95baec5027e712e47e, type: 3}
-  m_Name: Coffret Os Oeil
+  m_Name: Boite Doigts
   m_EditorClassIdentifier: 
-  title: Petit coffret en os
+  title: Doigts en conserve
   image: {fileID: 21300000, guid: dd673e76e60888b4193e2ffa400a2213, type: 3}
-  effectText: Un petit coffret en os, il contient peut etre quelque chose ?
-  narrationText: 'Vous ouvrez le coffret, et y trouvez un oeil !
-
-    Vous marchez
-    (ou rampez) jusqu''au prochaines portes.'
+  effectText: "Une boite de conserve, avec un dessin de doigt dessus, \xE9trange
+    mais pratique."
+  narrationText: "Vous ouvrez la boite et y trouvez 3 doigts !\nPlus loin, une nouvelle
+    s\xE9rie de portes."
   effectList:
-  - value: 1
-    member: 4
+  - value: 3
+    member: 0

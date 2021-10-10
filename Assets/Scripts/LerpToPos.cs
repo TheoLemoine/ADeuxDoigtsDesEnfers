@@ -11,7 +11,7 @@ public class LerpToPos : MonoBehaviour
             targetPos = transform.position;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         transform.position = Vector3.Lerp(transform.position, targetPos, smoothing);
     }
